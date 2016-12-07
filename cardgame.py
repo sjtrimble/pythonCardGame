@@ -48,13 +48,11 @@ class Player(object):
             for i in range (number): # iterating through the cards in the deck
                 dealtcard = deck.deal() # calling the Deck class' deal method and assigning it to a new dealtcard variable to be used in the next step
                 self.hand.append(dealtcard) # appending it to the player's hand variable set above
+        print "Sorry, the deck is out of cards"
 
     def show(self):
         for card in self.hand:
             card.show() # calling the Card class' show method (see above in Card class section) - this is okay because the item it's iterating through it of the Card class
-
-        print "Show is running!"
-
 # Sample Order of Process
 
 mydeck = Deck() # create a new deck with Deck class
