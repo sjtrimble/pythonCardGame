@@ -46,8 +46,7 @@ class Player(object):
     def draw_cards(self, number, deck): # also need to pass through the deck here so that the player can have cards deal to them from that deck of class Deck
         if number < len(deck.cards):# to ensure that the amount of cards dealt do not exceed how many cards remain in a deck
             for i in range (number): # iterating through the cards in the deck
-                dealtcard = deck.deal() # calling the Deck class' deal method and assigning it to a new dealtcard variable to be used in the next step
-                self.hand.append(dealtcard) # appending it to the player's hand variable set above
+                self.hand.append(deck.deal()) # appending it to the player's hand variable set above
         print "Sorry, the deck is out of cards"
 
     def show(self):
