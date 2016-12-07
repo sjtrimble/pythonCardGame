@@ -21,7 +21,7 @@ class Deck(object):
 
     def get_cards(self):
         suits = ['Hearts', 'Diamonds', 'Spades', 'Clubs']
-        values = ['Ace', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
+        values = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
         for suit in suits: # iterating through the suits
             for value in values: # iterating through each value
                 newcard = Card(value, suit) # creating a newcard variable with the class Card and passing the iterations from the for loop
